@@ -1,0 +1,138 @@
+.enrollment-section {
+    padding: 64px 24px;
+    background-color: #ffffff;
+  }
+  
+  .enrollment-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+  
+  .enrollment-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .batch-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ef4444;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 100px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    width: fit-content;
+  }
+  
+  .badge-dot {
+    font-size: 0.75rem;
+  }
+  
+  .enrollment-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  .highlight {
+    color: #10b981;
+  }
+  
+  .enrollment-description {
+    color: #6b7280;
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+  
+  .learners-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .learner-avatars {
+    display: flex;
+  }
+  
+  .learner-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #e5e7eb;
+    margin-left: -8px;
+  }
+  
+  .learner-avatar:first-child {
+    margin-left: 0;
+  }
+  
+  .learners-count {
+    font-weight: 600;
+  }
+  
+  .learners-text {
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+  
+  .features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #374151;
+  }
+  
+  .feature-check {
+    color: #10b981;
+    font-weight: bold;
+  }
+  
+  .enroll-button {
+    background-color: #10b981;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    transition: background-color 0.2s;
+  }
+  
+  .enroll-button:hover {
+    background-color: #059669;
+  }
+  
+  .button-arrow {
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .enrollment-container {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+  
+    .enrollment-title {
+      font-size: 2rem;
+    }
+  }
+  
+  

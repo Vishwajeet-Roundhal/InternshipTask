@@ -1,0 +1,27 @@
+.feature-banner {
+    background-color: #0DBA4B;
+    color: white;
+    padding: 8px 0;
+  }
+  
+  .feature-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .separator {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  

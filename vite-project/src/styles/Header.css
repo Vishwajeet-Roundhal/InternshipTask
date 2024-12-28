@@ -1,0 +1,194 @@
+/* Update header styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-wrapper {
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.header {
+  background-color: white;
+  padding: 20px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-logo {
+  color: #00D54B;
+  font-size: 32px;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.brand-subtitle {
+  color: #4B5563;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.nav-item {
+  color: #374151;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  color: #00D54B;
+}
+
+.enroll-btn {
+  background-color: #00D54B;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.enroll-btn:hover {
+  background-color: #00bf43;
+}
+
+.arrow {
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* Announcement Bar Styles */
+.announcement-bar {
+  background-color: #00D54B;
+  height: 40px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.announcement-content {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.announcement-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  white-space: nowrap;
+}
+
+.announcement-item {
+  color: white;
+  font-weight: 500;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .header-content {
+    padding: 0 16px;
+  }
+  
+  .navigation {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .brand {
+    align-items: center;
+  }
+
+  .navigation {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .enroll-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  width: 500px;  /* Adjust width as needed */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close-modal {
+  background: none;
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}

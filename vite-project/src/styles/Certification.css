@@ -1,0 +1,185 @@
+.certification-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.certification-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.certification-left {
+  max-width: 600px;
+}
+
+.linkedin-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #0077B5;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 24px;
+  border: none;
+  font-size: 14px;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+.certification-title {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.highlight {
+  color: #319F43;
+}
+
+.certification-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.learners-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.learners-avatars {
+  display: flex;
+}
+
+.learner-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -8px;
+}
+
+.learner-avatar:first-child {
+  margin-left: 0;
+}
+
+.learners-count {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.learners-subtext {
+  color: #666;
+  font-size: 14px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between; /* Align items in one line */
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #333;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-color: #22c55e; /* Green background */
+  border-radius: 50%; /* Circle shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkmark path {
+  stroke: white; /* Set the stroke color to white */
+  stroke-width: 2;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.enroll-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #22c55e;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.enroll-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.counselling-button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: transparent;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.counselling-button:hover {
+  background-color: #f5f5f5;
+}
+
+.certification-illustration {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+@media (max-width: 900px) {
+  .certification-content {
+      grid-template-columns: 1fr;
+  }
+
+  .certification-right {
+      order: -1;
+  }
+
+  .certification-illustration {
+      margin: 0 auto;
+  }
+
+  .certification-title {
+      font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .action-buttons {
+      flex-direction: column;
+  }
+
+  .certification-title {
+      font-size: 2rem;
+  }
+}

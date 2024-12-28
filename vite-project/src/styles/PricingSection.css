@@ -1,0 +1,191 @@
+.pricing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .pricing-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 48px;
+    line-height: 1.2;
+    color: #333;
+  }
+  
+  .highlight {
+    color: #22c55e;
+  }
+  
+  .price-card {
+    background: white;
+    border-radius: 20px;
+    padding: 24px;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .price-card.popular {
+    background: #22c55e;
+    color: white;
+    padding: 32px 24px;
+  }
+  
+  .popular .popular-features {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .flash-sale {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: #ff4444;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    margin-bottom: 16px;
+  }
+  
+  .flash-icon {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .plan-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .plan-description {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+  
+  .popular .plan-description {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .price-section {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    margin-bottom: 4px;
+  }
+  
+  .currency {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .price {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #666;
+    margin-left: 8px;
+  }
+  
+  .popular .original-price {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .duration {
+    color: #666;
+    font-size: 0.875rem;
+    margin-bottom: 24px;
+    text-decoration: underline;
+  }
+  
+  .popular .duration {
+    color: white;
+  }
+  
+  .features-list {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.875rem;
+  }
+  
+  .check-icon {
+    color: #22c55e;
+    flex-shrink: 0;
+  }
+  
+  .popular-features .check-icon {
+    color: #22c55e;
+  }
+  
+  .timer {
+    text-align: center;
+    padding: 8px;
+    background: #ff4444;
+    color: white;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    margin-bottom: 16px;
+  }
+  
+  .subscribe-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: none;
+    color: #22c55e;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .popular .subscribe-button {
+    background: white;
+    color: #22c55e;
+  }
+  
+  .subscribe-button:hover {
+    background: #f0f0f0;
+  }
+  
+  .popular .subscribe-button:hover {
+    background: #f8f9fa;
+  }
+  
+  @media (max-width: 1200px) {
+    .pricing-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .pricing-grid {
+      grid-template-columns: 1fr;
+    }
+  }

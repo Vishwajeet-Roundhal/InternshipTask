@@ -1,0 +1,49 @@
+.partnered {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.partnered p {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.logos {
+  display: flex;
+  justify-content: start;
+  gap: 2rem;
+  padding: 1rem 0;
+  overflow: hidden; /* Hide overflow to create the scrolling effect */
+  position: relative;
+}
+
+.logos-wrapper {
+  display: flex;
+  animation: scrollLogos 7s linear infinite; /* Animation to move logos */
+}
+
+.logo {
+  height: 90px; /* Adjust logo size */
+  width: auto;
+  max-width: 200px; /* Ensure logos don’t get too large */
+  object-fit: contain; /* Preserve aspect ratio */
+  transition: transform 0.3s ease;
+  flex-shrink: 0; /* Prevent logos from shrinking */
+  padding: 20px; /* Add padding around each image */
+}
+
+
+.logo:hover {
+  transform: scale(1.1); /* Optional: Add hover effect */
+}
+
+@keyframes scrollLogos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%); /* Move logos to the left */
+  }
+}

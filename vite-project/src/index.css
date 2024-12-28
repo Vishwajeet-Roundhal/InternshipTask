@@ -1,0 +1,82 @@
+/* Resetting some default styles for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  height: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Global styles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #333;
+}
+
+p, li, span {
+  color: #555;
+}
+
+a {
+  text-decoration: none;
+  color: #00a860;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button:focus {
+  outline: 2px solid #00a860;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #00a860;
+}
+
+/* Media Queries for mobile responsiveness */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .logo {
+    height: 4em;
+    padding: 1em;
+  }
+
+  .card {
+    padding: 1.5em;
+  }
+
+  .main-section {
+    flex-direction: column;
+  }
+}
