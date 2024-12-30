@@ -18,12 +18,14 @@ export function ContactForm() {
       [name]: value
     }));
   };
+  const frontendURL = import.meta.env.VITE_FRONTEND;
+  const backendURL = import.meta.env.VITE_BACKEND;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`${import.meta.env.Frontend}/api/contact/submit`, {
+      const response = await fetch(`${backendURL}/api/contact/submit`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
