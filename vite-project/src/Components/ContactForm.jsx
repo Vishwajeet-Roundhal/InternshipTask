@@ -27,7 +27,7 @@ export function ContactForm() {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://internship-task-85ve.vercel.app/api/contact/submit', {
+      const response = await fetch(`${backendURL}/api/contact/submit`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
