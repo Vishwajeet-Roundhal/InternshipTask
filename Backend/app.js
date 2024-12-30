@@ -20,6 +20,10 @@ app.use(express.json());
 app.use('/api/contact', contactRoutes);
 app.use('/api/admin', adminRoutes);
 
+app.get("/", (req,res) => {
+  res.json("hello");
+})
+
 
 connectDB().then(() => {
     try {
