@@ -20,6 +20,8 @@ export function ContactForm() {
   };
   const frontendURL = import.meta.env.VITE_FRONTEND;
   const backendURL = import.meta.env.VITE_BACKEND;
+  console.log(backendURL);
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
