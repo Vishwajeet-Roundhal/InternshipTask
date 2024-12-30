@@ -21,7 +21,7 @@ export function Header() {
       <header className="header">
         <div className="header-content">
           <div className="brand">
-            <a href="/" className="brand-logo">Skillup</a>
+            <a href="/login" className="brand-logo">Skillup</a>
             <span className="brand-subtitle">An Initiative By Hubnex Labs</span>
           </div>
           

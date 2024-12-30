@@ -37,8 +37,8 @@ export function Hero() {
         </div>
         <div className="hero-image-section">
           <div className="image-container">
-            <img src="https://s3-alpha-sig.figma.com/img/aabc/ad35/ff30881950bb2f40779d38f559a77264?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nU6Glb7BcW6WRE-9Qiao0K403MiRz06Mt4r1h0wKHIMjM~ehz9WlREC6LMGAHhdJyAZYK6EeJp5pRdtp9DphCXcXUPneqztqjQhepniDdLg5JMzmcSy~L~JGsr-74jOMDqNfD~nJFQ4VOoT3ZqaWgBG3YkJ~fRD6FYBVtrSjnkTW8PGcV-BI6DBd~UkxX2HTqiaIdlZxsq0Xm8-QLKOG3xih9HRs~92dkJcDz7znkQqKZsKnloPurjH0qs7q8EgFJFQ2ZtBJNf2M~4ZvMEWo5oD86U5NCs69kSuKXVgIxdhyIXBpj71d7ESIopq4DK5R~sAPR6lmF3hej2oA2cSFBg__"  alt="Student" className="hero-image" />
-            <div className="stat-card projects">
+          <img src="https://s3-alpha-sig.figma.com/img/aabc/ad35/ff30881950bb2f40779d38f559a77264?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nHXbBXE8Vw4piL2YmK484aktmjj1rmAFLTn3K78Z-bTaNTSx2G6MTORl~YXJ6xoYou13Vkn3UkaJYtOoQM88fktu-3D5ynRuCbWeyyVqPLG4B~vmywonw8X7z5aez7gsqDY9V3S3WY1FwmwQ70GMcHMmz8pZSXsocY509YZ7~1qH8C2qpKOKFkritR9exKs1DTC-~wtLN2dOFv~WmVFLzFxW0vsOeO61EgfDxc00NqRVSkZXOLK2FbnXVmsBNDcyId4t398urpt6MGtQHYcbiRFSep9MiERSj14hrRyzaCWbO7T35BJkiB6RTaqLHRDmsNJF-Q5Koz9~6VbUb~WrSA__" alt="Student" className="hero-image" />
+          <div className="stat-card projects">
               <div className="stat-icon">💻</div>
               <div>
                 <p className="stat-number">100+</p>
