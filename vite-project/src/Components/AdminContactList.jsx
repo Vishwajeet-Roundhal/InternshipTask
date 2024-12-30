@@ -8,7 +8,7 @@ const AdminContactList = () => {
   useEffect(() => {
     const fetchContacts = async () => {
       try {
-        const response = await fetch(`${import.meta.env.Backend}/api/admin/contacts`);
+        const response = await fetch(`${import.meta.env.Frontend}/api/admin/contacts`);
         const data = await response.json();
         setContacts(data);
       } catch (error) {

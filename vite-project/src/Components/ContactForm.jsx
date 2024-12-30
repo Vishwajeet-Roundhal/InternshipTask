@@ -23,7 +23,7 @@ export function ContactForm() {
     e.preventDefault();
 
     try {
-      const response = await fetch(`${import.meta.env.Backend}/api/contact/submit`, {
+      const response = await fetch(`${import.meta.env.Frontend}/api/contact/submit`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
