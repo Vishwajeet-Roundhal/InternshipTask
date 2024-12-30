@@ -4,11 +4,13 @@ import "../styles/AdminContactList.css"
 const AdminContactList = () => {
   const [contacts, setContacts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const backendURL = import.meta.env.VITE_BACKEND;
+
 
   useEffect(() => {
     const fetchContacts = async () => {
       try {
-        const response = await fetch(`${import.meta.env.Frontend}/api/admin/contacts`);
+        const response = await fetch(`${backendURL}/api/admin/contacts`);
         const data = await response.json();
         setContacts(data);
       } catch (error) {
