@@ -10,8 +10,9 @@ const cors = require('cors');
 const frontendUrl = process.env.FRONTEND_URL;
 
 app.use(cors({
-  origin: "https://internship-task-8iey.vercel.app",  // This allows requests from any origin
-  methods: ['GET', 'POST', 'PUT', 'DELETE']  // Allow specific methods if needed
+  origin: 'https://internship-task-8iey-leu1kril0.vercel.app', // Your frontend URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
+  allowedHeaders: ['Content-Type', 'Authorization'] // Allowed headers
 }));
 
 app.use(express.json());
