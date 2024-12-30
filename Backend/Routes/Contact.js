@@ -16,6 +16,8 @@ router.post('/submit', async (req, res) => {
       qualification,
       message,
     });
+    console.log(req.body);
+    
 
     // Save to the database
     await newContact.save();
