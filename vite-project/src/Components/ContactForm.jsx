@@ -32,7 +32,8 @@ export function ContactForm() {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(formData),
+        mode: 'no-cors', 
       });
 
       const result = await response.json();
