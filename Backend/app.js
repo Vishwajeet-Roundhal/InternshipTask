@@ -6,8 +6,11 @@ const contactRoutes = require("./Routes/Contact")
 const adminRoutes = require("./Routes/Admin")
 const p = process.env.PORT 
 const cors = require('cors');
+
+const frontendUrl = process.env.FRONTEND_URL;
+
 app.use(cors({
-  origin: true,  // This allows requests from any origin
+  origin: "https://internship-task-8iey.vercel.app/",  // This allows requests from any origin
   methods: ['GET', 'POST', 'PUT', 'DELETE']  // Allow specific methods if needed
 }));
 
